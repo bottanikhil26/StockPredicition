@@ -167,9 +167,9 @@ uvicorn app:app --reload (for checking the fast api)
 ---
 
 ## 📌 Assumptions
-- We are running the etl code daily by using Airflow
+- We are running the etl.py and data ingestion.py daily by using Airflow dag 
 - FinBERT sentiment score influences short-term movement.
-- We are are tracking model performs weekly by Ml Flow 
+- also asumming we are running preprocessing and model training atleast a week and use Ml Flow to track the model performace.
 - Prediction is binary classification: next-day `UP` or `DOWN`.
 - Only data for ticker `AAPL` is used.
 
