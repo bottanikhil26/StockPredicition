@@ -41,6 +41,7 @@ Files generated:
 
 data/AAPL_stock_data.csv
 data/AAPL_news_data.csv
+
 # Step 2: Data Ingestion and Sentiment Analysis
 
 Text Processing: The news data (headline + summary) is passed through the pre-trained FinBERT model to compute a sentiment score.
@@ -49,7 +50,8 @@ Cleaned Dataset: The merged dataset includes daily OHLCV data and corresponding 
 Output:
 
 data/AAPL_full_dataset.csv — merged dataset with stock and sentiment data.
-Step 3: Feature Engineering and Prediction
+
+# Step 3: Feature Engineering and Prediction
 
 Feature Engineering
 Using the FeatureEngineering class in data_preprocessing.py, the following features are added based on the lagged and historical stock/sentiment data:
